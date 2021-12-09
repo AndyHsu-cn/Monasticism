@@ -12,7 +12,7 @@
 
 ### 项目概述
 
-[第01章 基本概念](http://www.baidu.com)
+[第01章 基本概念](https://github.com/AndyHsu-cn/Monasticism/tree/main/01basic)
 
 ##### **编程的要求**
 
