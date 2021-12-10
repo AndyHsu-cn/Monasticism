@@ -14,7 +14,7 @@
 
 [第01章 基本概念](https://github.com/AndyHsu-cn/Monasticism/tree/main/01basic)
 
-**编程的要求**
+**编程要求**
 
 - 头文件包含的重要性
 - 添加**-Wall**'选项，将更多警告暴露出来并修改完
