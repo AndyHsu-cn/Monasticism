@@ -5,20 +5,14 @@
 ### 平台、工具概述
 
 - 操作系统：macOS Catalina 10.15
-
 - 代码环境：Visual Studio Code 1.50.1
-
 - 编译器    ：gcc 6.5.0
-
 - 书写工具：Typora 0.11.18
+- 学习流程：
+  1. 做计划 【Notes + Calender】 
+  2. 编    程 【VS Code】+ 编写Readme【Typora】
+  3. github提交
 
-- 学习流程：做计划 【Notes + Calender】
-
-  ​                   编    程 【VS Code】
-
-  ​                 Readme【Typora写】
-
-  ​               --> github提交
 
 ### 参考资料
 
