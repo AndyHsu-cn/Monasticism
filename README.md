@@ -4,11 +4,26 @@
 - 项目完毕后，开始数据结构初级阶段的学习，然后是C++语言的学习，直至进入数据结构进阶阶段的学习
 ### 平台、工具概述
 
-- 操作系统：macOS Mojave10.14.4
+- 操作系统：macOS Catalina 10.15
+
 - 代码环境：Visual Studio Code 1.50.1
+
 - 编译器    ：gcc 6.5.0
+
 - 书写工具：Typora 0.11.18
-- 学习流程：Calender做计划 + VS Code编程 + Typora写Readme --> github提交
+
+- 学习流程：做计划 【Notes + Calender】
+
+  ​                   编    程 【VS Code】
+
+  ​                 Readme【Typora写】
+
+  ​               --> github提交
+
+### 参考资料
+
+- 李慧芹老师b站网课
+- TBC...
 
 ### 项目概述
 
@@ -21,7 +36,27 @@
 - 以函数为单位编写程序
 - 书写规范的注释（可以参考linux内核源码）
 
-[第02章 数据类型、运算符和表达式](http://www.baidu.com)
+[第02章 数据类型、运算符和表达式](https://github.com/AndyHsu-cn/Monasticism/tree/main/02data)
+
+**01 实数比较不要使用==**
+
+```
+fabs(value1 - value2) <= 1e-6则可认为两数相等
+```
+
+**02 全局变量谨慎使用**
+
+**03 逻辑运算符&&和||有短路特性**
+
+**04 位运算（嵌入式开发者要重视）**
+
+*^异或*  <=>  相同为0，不同为1
+
+``` c
+将操作数第n位置置1，其他位置不变      num = num | 1<<n
+将操作数第n位置置0，其他位置不变      num = num & ~(1<<n)
+测试指定位                         if(j & 1<<n)
+```
 
 [第03章 输入输出专题](http://www.baidu.com)
 
