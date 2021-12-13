@@ -5,14 +5,20 @@
 ### 平台、工具概述
 
 - 操作系统：macOS Catalina 10.15
-- 代码环境：Visual Studio Code 1.50.1
-- 编译器    ：gcc 6.5.0
-- 书写工具：Typora 0.11.18
-- 学习流程：
-  1. 做计划 【Notes + Calender】 
-  2. 编    程 【VS Code】+ 编写Readme【Typora】
-  3. github提交
 
+- 代码环境：Visual Studio Code 1.50.1
+
+- 编译器    ：gcc 6.5.0
+
+- 书写工具：Typora 0.11.18
+
+- 学习流程：
+  
+  | 流程名称   | 所用工具        |
+  | ---------- | --------------- |
+  | 做计划     | Note + Calender |
+  | 编程       | VS Code         |
+  | 编写Readme | Typora          |
 
 ### 参考资料
 
@@ -29,6 +35,10 @@
 - 添加**-Wall**'选项，将更多警告暴露出来并修改完
 - 以函数为单位编写程序
 - 书写规范的注释（可以参考linux内核源码）
+
+***
+
+
 
 [第02章 数据类型、运算符和表达式](https://github.com/AndyHsu-cn/Monasticism/tree/main/02data)
 
@@ -52,7 +62,38 @@ fabs(value1 - value2) <= 1e-6则可认为两数相等
 测试指定位                         if(j & 1<<n)
 ```
 
-[第03章 输入输出专题](http://www.baidu.com)
+***
+
+
+
+[第03章 输入输出专题](https://github.com/AndyHsu-cn/Monasticism/tree/main/03io)
+
+**01 printf、scanf函数是变参函数**
+
+```
+int printf(const char * restrict format, ...);
+int scanf(const char *restrict format, ...);
+```
+
+**02 传参数，很少使用char类型，而会用int代替**
+
+出于考虑出错时的判别（如EOF）
+
+``` C
+int getchar(void);
+int putchar(int c);
+```
+
+**03 缓冲区**
+
+``` c
+1、scanf()家族里format中white space会match任意数量的white space【包含0个】
+2、scanf()家族会将没有match成功的字符放回缓冲区
+```
+
+***
+
+
 
 [第04章 流程控制](http://www.baidu.com)
 
