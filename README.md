@@ -38,8 +38,6 @@
 
 ***
 
-
-
 [第02章 数据类型、运算符和表达式](https://github.com/AndyHsu-cn/Monasticism/tree/main/02data)
 
 **01 实数比较不要使用==**
@@ -63,8 +61,6 @@ fabs(value1 - value2) <= 1e-6则可认为两数相等
 ```
 
 ***
-
-
 
 [第03章 输入输出专题](https://github.com/AndyHsu-cn/Monasticism/tree/main/03io)
 
@@ -93,9 +89,30 @@ int putchar(int c);
 
 ***
 
+[第04章 流程控制](https://github.com/AndyHsu-cn/Monasticism/tree/main/04control)
 
+**01 switch语句注意事项**
 
-[第04章 流程控制](http://www.baidu.com)
+- case是跳入标志，break是跳出标志
+
+**02 do while有时候也是需要的 — 比如，提供菜单+用户选择这样的场景**
+
+**03 if和goto搭配也可以实现跳转，但是要谨慎使用**
+
+- goto实现的无条件跳转
+- 跳转到的label只能在本函数
+- 过多使用goto破坏结构化编程
+
+```c
+loop:
+    sum += i;
+    i++;
+    if(i <= MAX)
+        goto loop;
+    printf("sum = %d\n", sum);
+```
+
+***
 
 [第05章 数组](http://www.baidu.com)
 
