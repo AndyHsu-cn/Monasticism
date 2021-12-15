@@ -207,7 +207,7 @@ char * strncat(char *restrict s1, const char *restrict s2, size_t n);
 
 int strncmp(const char *s1, const char *s2, size_t n);
 ```
-
+***
 [第06章 指针](http://www.baidu.com)
 
 [第07章 函数](http://www.baidu.com)
