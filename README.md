@@ -114,7 +114,99 @@ loop:
 
 ***
 
-[第05章 数组](http://www.baidu.com)
+[第05章 数组](https://github.com/AndyHsu-cn/Monasticism/tree/main/05array)
+
+**01 C语言中的构造类型**
+
+- **数组**
+  - 一维数组
+  - 二维数组
+  - 字符数组
+- 结构体 struct
+- 共用体 union
+- 枚举 enum
+
+**02 数组名的含义**
+
+- 数组名是**表示地址（数组的起始位置）的常量**
+- a[i] = *(a+i)，基于这个设计，C语言也就对于检查数组越界无能为力了【是缺点也是优点】
+
+**03 Fibonacci数列**
+
+``` c
+for (i = 0; i < LIMIT; i++){
+        if(i >= 2)
+            sequence[i] = sequence[i-1]+sequence[i-2]; 
+        printf("sequence[%d] = %d\n", i+1, sequence[i]);
+}
+```
+
+**04 冒泡排序法**
+
+``` c
+for ( i = 0; i < num-1; i++)
+{		// flagExchange为0，表示此轮未交换(默认)； 为1，表示此轮交换过
+        flagExchange = 0;
+        for(j = 0; j < num-1-i; j++)
+        {
+            if(arr[j] > arr[j+1])
+            {
+                tmp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = tmp;
+                flagExchange = 1;
+            }
+        }
+        if(!flagExchange)
+            break;
+}
+```
+
+**05 选择排序法**
+
+``` c
+for ( i = 0; i < num-1; i++)
+{
+        index_min = i;
+        for ( j = i+1; j < num; j++)
+        {
+            if(arr[j] < arr[index_min])
+                index_min = j;
+        }
+        if(index_min != i){
+            tmp = arr[i];
+            arr[i] = arr[index_min];
+            arr[index_min] = tmp;
+        }
+}
+```
+
+**06 字符数组常用函数 -- 长度不受限函数**
+
+``` c
+char * strcpy(char * dst, const char * src);
+// 不论dst空间是否足够大，src所有内容都将拷贝到dst中
+// 程序员要自己保证dst足够大到容纳src和NUL，否则mac下提示illegal hardware instruction
+
+char * strcat(char *restrict s1, const char *restrict s2);
+// 程序员要自己保证dst足够大到容纳s1、s2和NUL，否则mac下提示illegal hardware instruction
+
+char * stpcpy(char * dst, const char * src);
+```
+
+**07字符数组常用函数 -- 长度受限函数**
+
+``` c
+char * stpncpy(char * dst, const char * src, size_t len);
+// 不论strlen(src)和len大小如何，该函数向dst写入len个字符
+// 若src不够len个大小，则全用NUL补够；否则dst将不以NUL字节结尾
+
+char * strncat(char *restrict s1, const char *restrict s2, size_t n);
+// 拷贝最多n个字符到s1中，绝对再在末尾添加NUL字节结尾
+// n最好设置为sizeof(s1) - strlen(s1) - 1
+
+int strncmp(const char *s1, const char *s2, size_t n);
+```
 
 [第06章 指针](http://www.baidu.com)
 
