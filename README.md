@@ -280,7 +280,49 @@ int (*p)[3];			// p是指针，指向拥有3个整形元素的数组
 
 **07多级指针**
 
-[第07章 函数](http://www.baidu.com)
+***
+
+[第07章 函数](https://github.com/AndyHsu-cn/Monasticism/tree/main/07function)
+
+**01函数传参的两种方式**
+
+- 值传递
+- 地址传递
+
+**02 函数的递归调用**
+
+**03 函数与数组(如果传参)**
+
+- 函数与一维数组
+
+- 函数与二维数组
+
+  ``` c
+  // 形参中 int (*p)[N] == int p[][N]
+  ```
+
+- 函数与字符数组
+
+**04 函数与指针**
+
+- 指针函数
+
+  ``` c
+  // TypeName * FuncName( 形参列表 );
+  char * stpcpy(char * dst, const char * src);
+  ```
+
+- 函数指针
+
+  ``` c
+  // TypeName (*FuncPoint)( 形参列表 );
+  ```
+
+- 函数指针数组
+
+  ``` c
+  // TypeName (*func[N])(形参列表)
+  ```
 
 [第08章 构造类型](http://www.baidu.com)
 
