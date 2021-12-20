@@ -324,7 +324,34 @@ int (*p)[3];			// p是指针，指向拥有3个整形元素的数组
   // TypeName (*func[N])(形参列表)
   ```
 
-[第08章 构造类型](http://www.baidu.com)
+***
+
+[第08章 构造类型](https://github.com/AndyHsu-cn/Monasticism/tree/main/08structured)
+
+**01 结构体**
+
+- 结构体数据类型的size并不是简单的所含各数据类型的size之和【存在地址对齐的问题】
+- **结构体作为形参传递开销太大，一般传递结构体指针传参**
+
+**02 共用体**
+
+- 类型描述
+
+  ``` c
+  /*
+    union unionName{
+      typeName var1;
+      typeName var2;
+      ...
+    };
+  */
+  ```
+
+- 结构体数据类型的size是**所含各数据类型的size的最大值**
+
+**03 枚举**
+
+***
 
 [第09章 动态内存管理](http://www.baidu.com)
 
