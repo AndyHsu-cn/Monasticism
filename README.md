@@ -353,7 +353,22 @@ int (*p)[3];			// p是指针，指向拥有3个整形元素的数组
 
 ***
 
-[第09章 动态内存管理](http://www.baidu.com)
+[第09章 动态内存管理](https://github.com/AndyHsu-cn/Monasticism/tree/main/09dynamic)
+
+- typedef #define用途
+  - typedef为数据类型起别名
+  - #define定义常量
+
+- free函数
+
+  ``` c
+  void free(void *ptr);
+  // free函数只放弃了通过ptr指向一块内存的权利，但指向何处此时并不确定，所以此时是野指针
+  // 使用free后，最好将ptr置为NULL比较安全
+  
+  ```
+
+  
 
 [第10章 调试工具和调试技巧 - gdb + make](http://www.baidu.com)
 
